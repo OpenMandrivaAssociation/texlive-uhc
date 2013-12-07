@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-uhc
 Version:	20070729
-Release:	5
+Release:	6
 Summary:	Fonts for the Korean language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/korean/HLaTeX
