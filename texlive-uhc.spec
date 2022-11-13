@@ -1,18 +1,12 @@
-# revision 16791
-# category Package
-# catalog-ctan /fonts/korean/HLaTeX
-# catalog-date 2007-07-29 12:13:44 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-uhc
-Version:	20190228
+Version:	16791
 Release:	1
 Summary:	Fonts for the Korean language
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/korean/HLaTeX
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uhc.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uhc.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uhc.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/uhc.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ Support for Korean documents written in Korean standard KSC
 codes for LaTeX2e.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -3232,7 +3226,7 @@ codes for LaTeX2e.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
