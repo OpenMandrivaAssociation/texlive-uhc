@@ -3,7 +3,7 @@
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
-Release:	1
+Release:	3
 Summary:	Fonts for the Korean language
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/fonts/korean/HLaTeX
